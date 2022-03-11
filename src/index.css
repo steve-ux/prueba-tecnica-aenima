@@ -145,3 +145,186 @@ hr {
   justify-content: center;
 }
 
+
+/* Tendencias */
+
+.tendencias .galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  grid-gap: 50px;
+  background-color: grey;
+}
+.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galleryItem:nth-child(1) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+
+.galleryItem:nth-child(2) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+.galleryItem:nth-child(3) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+.galleryItem {
+  position: relative;
+  font-family: var(--secondary-font);
+  width: 28vw;
+  height: 50vh;
+}
+span {
+  color: grey;
+  font-family: var(--primary-font);
+}
+.galleryTitle {
+  position: absolute;
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0;
+  cursor: default;
+}
+.galleryImg {
+  filter: blur(0px);
+}
+.galleryItem:hover .galleryTitle {
+  opacity: 1;
+}
+
+.galleryItem:hover .galleryImg {
+  transition: filter 0.3s ease-in;
+  transform: scale(1);
+}
+
+
+/* Tendencias */
+
+.bodyTendencias {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #7f7fd5;
+  background: #ebebeb;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.titleTendencias {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  margin-right: 60rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: .5em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-pink {
+background: var(--primary-color);
+  color: #fafafa;
+  font-family: var(--primary-font);
+  margin-left: 1rem;
+}
+
+
+.card__body h4 {
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+.card__body p {
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  font-size: .8rem;
+}
+
+/* for touch screen devices */
+
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+.pageTendencias {
+  color: black;
+  background-color: aqua;
+  text-align: center;
+}
+
+
+/* Footer */
+
+
+footer {
+  background-color: #2a3037;
+  padding: 2rem;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.containerRedes {
+  display: flex;
+  align-items: center;
+}
+.logoFb {
+  padding: .5rem;
+}
