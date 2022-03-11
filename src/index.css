@@ -1,3 +1,8 @@
+:root {
+  --primary-font: "Montserrat Bold";
+  --secondary-font: "Montserrat Thin";
+  --primary-color: #fa6980;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +11,137 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url('./fonts/Montserrat-Regular.otf'); 
+ }
+ @font-face {
+   font-family: "Montserrat Bold";
+   src: url('./fonts/Montserrat-Bold.otf'); 
+ }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* Navbar */
+
+
+
+
+/* Header */
+
+.containerHeader {
+  background-image: url("./Assets/img/Viajes_Hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
 }
+
+h1 {
+  font-family: var(--primary-font);
+}
+hr {
+  text-decoration: none;
+}
+.linea {
+  border: none;
+  height: 2px !important;
+  color: rgb(255, 255, 255) !important;
+  width: 35%;
+  margin-left: 13rem;
+  opacity: 100;
+}
+.bajada {
+  font-family: var(--secondary-font);
+  color: white;
+  font-weight: bold;
+  margin-left: 13rem;
+  width: 40%;
+}
+.titleSecondary {
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 13rem;
+}
+
+.logoPin {
+  width: 1.6vw;
+  height: 5vh;
+  margin-left: 1rem;
+  margin-top: .4rem;
+}
+
+.titleHeader {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-top: 12rem;
+  margin-left: 12rem;
+}
+.titlePrincipal {
+  margin-left: 1rem;
+}
+.cuadrado {
+  width: 220px; 
+  height: 150px; 
+  background: #0d0b2b49;
+  border: dotted;
+  border-color: rgba(245, 245, 245, 0.425);
+  position: absolute;
+  transform: translateX(1000px);
+}
+.textBox {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: small;
+}
+.subtitleBox {
+  color: white;
+}
+.parrafoBox {
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: .7rem;
+  text-align: start;
+  margin-left: 2rem;
+}
+.containerBox {
+  margin-top: 2rem;
+  text-align: center;
+}
+.linea2 {
+  border: none;
+  height: 4px !important;
+  color: var(--primary-color);
+  width: 17%;
+  opacity: 100;
+  margin-top: 10rem;
+  margin-left: -1rem;
+}
+.circulo {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff6c;
+  margin-left: 11rem;
+  margin-top: -2.4rem;
+}
+.circulo2 {
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-left: 11.5rem;
+  margin-top: -2.4rem;
+  font-family: var(--primary-font);
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
