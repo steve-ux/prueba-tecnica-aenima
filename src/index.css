@@ -21,12 +21,6 @@ body {
  }
 
 
-
-/* Navbar */
-
-
-
-
 /* Header */
 
 .containerHeader {
@@ -83,7 +77,7 @@ hr {
   margin-left: 1rem;
 }
 .cuadrado {
-  width: 220px; 
+  width: 230px; 
   height: 150px; 
   background: #0d0b2b49;
   border: dotted;
@@ -146,23 +140,24 @@ hr {
 }
 
 
-/* Tendencias */
+/* Blog */
 
-.tendencias .galleryContainer {
+.blog .galleryContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 30px;
-  grid-gap: 50px;
-  background-color: grey;
+  grid-gap: 25px;
+  background-color: rgb(255, 255, 255);
 }
 .galleryImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: .5rem;
 }
 .galleryItem:nth-child(1) {
-  grid-column-start: span 1;
-  grid-row-start: span 1;
+  grid-column-start: span 2;
+  grid-row-start: span 2;
 }
 
 .galleryItem:nth-child(2) {
@@ -173,11 +168,22 @@ hr {
   grid-column-start: span 1;
   grid-row-start: span 1;
 }
+.galleryItem:nth-child(4) {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.galleryItem:nth-child(5) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
 .galleryItem {
   position: relative;
-  font-family: var(--secondary-font);
-  width: 28vw;
-  height: 50vh;
+  font-family: var(--primary-font);
+}
+.galleryItemII {
+  position: relative;
+  font-family: var(--primary-font);
+  margin-bottom: 5rem;
 }
 span {
   color: grey;
@@ -186,11 +192,74 @@ span {
 .galleryTitle {
   position: absolute;
   bottom: 0;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  height: 100%;
   width: 100%;
-  margin: 0;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: start;
   cursor: default;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.galleryTitleII {
+  position: absolute;  
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  font-family: var(--primary-font);
+  top: 0;
+  left: 0;
+  color: white;
+  cursor: pointer;
+  margin-top: 40rem;
+  margin-left: 2rem;
+}
+.galleryTitleIII {
+  position: absolute;  
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  color: white;
+  cursor: pointer;
+  margin-top: 43rem;
+  margin-left: 2rem;
+}
+.galleryTitleIV {
+  position: absolute;  
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  font-family: var(--primary-font);
+  top: 0;
+  left: 0;
+  color: white;
+  cursor: pointer;
+  margin-top: 20rem;
+  margin-left: 2rem;
+}
+.galleryTitleV {
+  position: absolute;  
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  color: white;
+  cursor: pointer;
+  margin-top: 23rem;
+  margin-left: 2rem;
 }
 .galleryImg {
   filter: blur(0px);
@@ -200,9 +269,86 @@ span {
 }
 
 .galleryItem:hover .galleryImg {
+  filter: blur(2px);
   transition: filter 0.3s ease-in;
   transform: scale(1);
 }
+.galleryItemII:hover .galleryImg {
+  filter: blur(2px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1);
+}
+.subarticulos {
+  display: flex;
+  flex-direction: row;
+  color: gray;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: .7rem;
+  padding: .2rem;
+}
+.articulos {
+  position: absolute;  
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: .7rem;
+  padding: .3rem;
+}
+.articulos2 {
+  position: absolute;  
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: .7rem;
+  padding: .3rem;
+}
+.iconTime {
+  width: 5%;
+  height: 5%;
+  padding: .2rem;
+  margin-top: -.2rem;
+}
+.iconTime2 {
+  width: 3%;
+  height: 3%;
+  padding: .2rem;
+  margin-top: -.3rem;
+}
+.iconTime3 {
+  width: 3%;
+  height: 3%;
+  padding: .2rem;
+  margin-top: -.3rem;
+}
+.titleSubarticulo {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.titleBlog {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  margin-left: 7rem;
+}
+
+
+
 
 
 /* Tendencias */
@@ -238,6 +384,13 @@ img {
   max-width: 100%;
   display: block;
   object-fit: cover;
+}
+img:hover {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: blur(1px);
+  cursor: pointer;
 }
 
 .card {
@@ -304,10 +457,28 @@ background: var(--primary-color);
 }
 
 .pageTendencias {
-  color: black;
-  background-color: aqua;
+  
+  color: white;
   text-align: center;
+  padding: .25em .75em;
+  border-radius: .5em;
+  font-weight: bold;
+  background-color: var(--primary-color);
 }
+.containerTendencias {
+  background-image: url("../src/Assets/img/under-construccion.jpg");
+  background-size: cover;
+  opacity: 90%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: var(--primary-font);
+}
+
+
+
 
 
 /* Footer */

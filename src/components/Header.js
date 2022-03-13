@@ -17,8 +17,7 @@ function Header() {
       <div className="cuadrado">
         <div className="containerBox">
           <h6 className="textBox">
-            Próxima Aventura{" "}
-            <img src={Arrow} alt="flecha apuntando hacia la derecha" />
+            Próxima Aventura <img src={Arrow} alt="flecha apuntando hacia la derecha" />
           </h6>
           <h6 className="subtitleBox">Europa Meridional</h6>
           <p className="parrafoBox">

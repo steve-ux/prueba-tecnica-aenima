@@ -1,4 +1,5 @@
 import Navigator from "../components/Navigator/Navbar";
+import Footer from "../components/Footer";
 
 function Tendencias() {
     return (
@@ -7,10 +8,8 @@ function Tendencias() {
             <Navigator/>
             <div className="containerTendencias">
             <h3 className="pageTendencias">Página en construción, disculpe las molestias.</h3>
-            <p>que pasó?</p>
             </div>
-            
-            
+            <Footer/>        
         </div>
     
     );
