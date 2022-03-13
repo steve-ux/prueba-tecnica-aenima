@@ -40,7 +40,7 @@ function Blog() {
         <img src={Time} className="iconTime3" alt="reloj"/><p> Hace 15m</p>
         </div> 
       </div>
-      <div className="galleryItem">
+      <div className="galleryItem artCamino">
         <img src={BlogImg5} alt="" className="galleryImg" />
         <h2 className="titleSubarticulo">Artículo de camino</h2>
         <div className="subarticulos">
